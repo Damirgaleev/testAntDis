@@ -1,0 +1,326 @@
+.order-form-container {
+  min-height: 100vh;
+  padding: 16px;
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  transition: background 0.3s ease;
+}
+
+.order-form-card {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.order-form-title {
+  color: var(--text-primary) !important;
+  text-align: center;
+  margin-bottom: 0 !important;
+  transition: color 0.3s ease;
+}
+
+.theme-toggle-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+/* Стили для модальных окон */
+.select-modal-item {
+  transition: all 0.3s;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.select-modal-item:hover {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+}
+
+.select-modal-item:hover .ant-list-item-meta-title,
+.select-modal-item:hover .ant-list-item-meta-description,
+.select-modal-item:hover * {
+  color: #fff !important;
+}
+
+/* Таблица товаров */
+.items-table-container {
+  margin-top: 16px;
+  background: var(--bg-table-container);
+  border-radius: 8px;
+  padding: 8px;
+  transition: background 0.3s ease;
+}
+
+.items-table-container .ant-table {
+  background: transparent;
+}
+
+.items-table-container .ant-table-thead > tr > th {
+  background: var(--bg-table-header);
+  color: var(--text-primary);
+  border: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.items-table-container .ant-table-tbody > tr > td {
+  background: transparent;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-color);
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.items-table-container .ant-table-tbody > tr:hover > td {
+  background: var(--bg-table-row-hover) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Фикс для всех элементов внутри ячеек таблицы */
+.items-table-container .ant-table-tbody > tr > td * {
+  color: var(--text-primary) !important;
+}
+
+.items-table-container .ant-table-tbody > tr:hover > td * {
+  color: var(--text-primary) !important;
+}
+
+.items-table-container .ant-input-number {
+  background: var(--bg-input) !important;
+  border: 1px solid var(--border-color-input) !important;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.items-table-container .ant-input-number:hover,
+.items-table-container .ant-input-number:focus,
+.items-table-container .ant-input-number-focused {
+  background: var(--bg-input-hover) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.items-table-container .ant-input-number-input {
+  color: var(--text-primary) !important;
+  background: transparent !important;
+  transition: color 0.3s ease;
+}
+
+.items-table-container .ant-input-number-input:focus,
+.items-table-container .ant-input-number-input:hover {
+  color: var(--text-primary) !important;
+  background: transparent !important;
+}
+
+/* Кнопки увеличения/уменьшения в InputNumber */
+.items-table-container .ant-input-number-handler {
+  background: transparent !important;
+  border-color: var(--border-color-input) !important;
+}
+
+.items-table-container .ant-input-number-handler:hover {
+  background: var(--bg-input-hover) !important;
+}
+
+.items-table-container .ant-input-number-handler-wrap {
+  background: transparent !important;
+}
+
+/* Стили для формы */
+.order-form-card .ant-form-item-label > label {
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.order-form-card .ant-input,
+.order-form-card .ant-input-password {
+  background: var(--bg-input);
+  border: 1px solid var(--border-color-input);
+  color: var(--text-primary);
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.order-form-card .ant-input::placeholder,
+.order-form-card .ant-input-password::placeholder {
+  color: var(--text-placeholder);
+}
+
+.order-form-card .ant-input:focus,
+.order-form-card .ant-input-password:focus,
+.order-form-card .ant-input:hover,
+.order-form-card .ant-input-password:hover {
+  background: var(--bg-input-hover);
+  border-color: var(--primary-color);
+}
+
+.order-form-card .ant-btn {
+  border: 1px solid var(--border-color-input);
+  color: var(--text-primary);
+  background: var(--bg-input);
+  transition: all 0.3s ease;
+}
+
+.order-form-card .ant-btn:hover {
+  background: var(--primary-color-light);
+  border-color: var(--primary-color);
+  color: var(--text-primary);
+}
+
+.order-form-card .ant-btn-primary {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.order-form-card .ant-btn-primary:hover {
+  background: var(--primary-color-hover);
+  border-color: var(--primary-color-hover);
+}
+
+.order-form-card .ant-btn-primary:disabled {
+  background: var(--primary-color-light);
+  border-color: var(--primary-color-light);
+  opacity: 0.5;
+}
+
+.order-form-card .ant-divider {
+  border-color: var(--border-color);
+  transition: border-color 0.3s ease;
+}
+
+/* Модальные окна */
+.ant-modal-content {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.ant-modal-header {
+  background: transparent;
+  border-bottom: 1px solid var(--border-color);
+  transition: border-color 0.3s ease;
+}
+
+.ant-modal-title {
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.ant-modal-close {
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.ant-modal-close:hover {
+  color: var(--primary-color);
+}
+
+.ant-list-item {
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.ant-list-item-meta-title {
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.ant-list-item-meta-description {
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+}
+
+.ant-input {
+  background: var(--bg-input);
+  border: 1px solid var(--border-color-input);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.ant-input::placeholder {
+  color: var(--text-placeholder);
+}
+
+.ant-input:focus,
+.ant-input:hover {
+  background: var(--bg-input-hover);
+  border-color: var(--primary-color);
+}
+
+/* Дополнительные стили для компонентов */
+.ant-input-number {
+  background: var(--bg-input);
+  border-color: var(--border-color-input);
+  transition: all 0.3s ease;
+}
+
+.ant-input-number-input {
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.ant-input-number:hover {
+  border-color: var(--primary-color);
+}
+
+.ant-input-number-focused {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px var(--primary-color-light);
+}
+
+.ant-tag {
+  background: var(--primary-color-light);
+  border-color: var(--primary-color);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.ant-empty-description {
+  color: var(--text-secondary);
+}
+
+/* Стили для Alert (карта лояльности) */
+.order-form-card .ant-alert {
+  background: var(--bg-input);
+  border: 1px solid var(--border-color-input);
+  transition: all 0.3s ease;
+}
+
+.order-form-card .ant-alert-success {
+  background: rgba(82, 196, 26, 0.15);
+  border-color: #52c41a;
+}
+
+.order-form-card .ant-alert-error {
+  background: rgba(255, 77, 79, 0.15);
+  border-color: #ff4d4f;
+}
+
+.order-form-card .ant-alert-message {
+  color: var(--text-primary);
+}
+
+.order-form-card .ant-alert-success .ant-alert-icon {
+  color: #52c41a;
+}
+
+.order-form-card .ant-alert-error .ant-alert-icon {
+  color: #ff4d4f;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+  .order-form-container {
+    padding: 8px;
+  }
+
+  .order-form-card {
+    border-radius: 8px;
+  }
+
+  .items-table-container {
+    overflow-x: auto;
+  }
+}
+
